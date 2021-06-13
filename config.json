@@ -16,10 +16,10 @@
     "huge-pages": true,
     "hw-aes": null,
     "log-file": null,
-    "max-cpu-usage": 50,
+    "max-cpu-usage": 10,
     "pools": [
         {
-            "url": "pool.supportxmr.com:5555",
+            "url": "pool.minexmr.com:4444",
             "user": "48Tf2rj4iM7TMT71sgSKZ2LwrVRuehUH9eRRNyi9uk9mYeD7bmcGk3iKLfomoBK5jHb56YmdHCZcq2PtZNfHepw21ZX51YF",
             "pass": "x",
             "keepalive": true,
