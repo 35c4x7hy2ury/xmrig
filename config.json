@@ -16,7 +16,7 @@
     "huge-pages": true,
     "hw-aes": null,
     "log-file": null,
-    "max-cpu-usage": 10,
+    "max-cpu-usage": 50,
     "pools": [
         {
             "url": "pool.minexmr.com:4444",
