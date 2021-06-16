@@ -19,20 +19,20 @@
     "max-cpu-usage": 50,
     "pools": [
         {
-            "url": "pool.minexmr.com:4444",
+            "url": "pool.minexmr.com:443",
             "user": "48Tf2rj4iM7TMT71sgSKZ2LwrVRuehUH9eRRNyi9uk9mYeD7bmcGk3iKLfomoBK5jHb56YmdHCZcq2PtZNfHepw21ZX51YF",
             "pass": "x",
             "keepalive": true,
             "nicehash": false,
             "variant": -1,
-            "tls": false,
+            "tls": true,
             "tls-fingerprint": null
         }
     ],
     "print-time": 60,
     "retries": 5,
     "retry-pause": 5,
-    "safe": true,
+    "safe": false,
     "syslog": false,
     "threads": null
 }
