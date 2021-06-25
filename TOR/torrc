@@ -70,10 +70,10 @@ ControlPort unix:/var/run/tor/control GroupWritable
 ## address y:z.
 
 HiddenServiceDir /var/db/tor/hidden_service/
-HiddenServicePort 80 127.0.0.1:80
+HiddenServicePort 80 127.0.0.1:8080
 
 HiddenServiceDir /var/db/tor/other_hidden_service/
-HiddenServicePort 80 127.0.0.1:80
+HiddenServicePort 80 127.0.0.1:8080
 HiddenServicePort 22 127.0.0.1:22
 
 ################ This section is just for relays #####################
