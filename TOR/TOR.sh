@@ -6,7 +6,7 @@ apt-get install tor deb.torproject.org-keyring torsocks
 sudo apt install privoxy
 sudo apt install nano
 sudo systemctl stop tor
-cd /etc/tor/torrc
+cd /etc/tor/
 rm -rf torrc
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
 sudo systemctl restart tor
