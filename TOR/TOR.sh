@@ -6,12 +6,13 @@ apt-get install tor deb.torproject.org-keyring torsocks
 sudo apt install privoxy
 sudo apt install nano
 sudo systemctl stop tor
+sudo systemctl restart tor
+sudo systemctl start tor 
+sudo systemctl enable tor
 cd /etc/tor/
 rm -rf torrc
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
-sudo systemctl restart tor
-sudo systemctl start tor
-sudo systemctl enable tor
+
 cat /var/lib/tor/other_hidden_service/hostname
 cat /var/db/tor/hidden_service
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/xmrig.sh && chmod +x xmrig.sh && ./xmrig.sh
