@@ -1,12 +1,12 @@
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
-sudo apt get install net-tools
-sudo apt-get install openssh-server
-sudo apt-get install torsocks
-sudo apt install -y tor
-sudo apt install -y screen
-sudo apt install privoxy
+sudo apt get install net-tools -y
+sudo apt-get install openssh-server -y
+sudo apt-get install torsocks -y
+sudo apt install tor -y
+sudo apt install screen -y
+sudo apt install privoxy -y
 sudo apt-get update && sudo apt-get upgrade -y 
-sudo apt update && sudo apt upgrade 
+sudo apt update && sudo apt upgrade -y
 
 sudo /etc/init.d/tor stop
 
