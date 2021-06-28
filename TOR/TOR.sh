@@ -8,12 +8,12 @@ sudo apt-get install privoxy -y
 sudo apt-get update && sudo apt-get upgrade -y 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt-get ibus-pinyin
-sudo apt-get ibus
-sudo apt-get ibus-clutter
-sudo apt-get ibus-gtk
-sudo apt-get ibus-gtk3
-sudo apt-get ibus-qt4
+sudo apt-get ibus-pinyin -y
+sudo apt-get ibus -y
+sudo apt-get ibus-clutter -y
+sudo apt-get ibus-gtk -y
+sudo apt-get ibus-gtk3 -y
+sudo apt-get ibus-qt4 -y
 
 sudo /etc/init.d/tor stop
 
