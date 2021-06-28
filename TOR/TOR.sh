@@ -13,13 +13,3 @@ sudo cp torrc /etc/tor/torrc
 
 sudo /etc/init.d/tor start
 bash -c 'echo "
-unproxy()
-{
-    export HTTP_PROXY=""
-    export http_proxy=""
-    export HTTPS_PROXY=""
-    export https_proxy=""
-    export all_proxy=""
-}
-">> ~/.bashrc'
-
