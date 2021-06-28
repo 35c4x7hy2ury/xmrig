@@ -1,5 +1,5 @@
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
-sudo apt get install net-tools -y
+sudo apt-get install -y bridge-utils dnsmasq uml-utilities iptables wget net-tools
 sudo apt-get install openssh-server -y
 sudo apt-get install torsocks -y
 sudo apt-get install tor -y
@@ -7,12 +7,13 @@ sudo apt-get install screen -y
 sudo apt-get install privoxy -y
 sudo apt-get update && sudo apt-get upgrade -y 
 sudo apt update && sudo apt upgrade -y
+
 sudo apt-get ibus-pinyin
 sudo apt-get ibus
 sudo apt-get ibus-clutter
 sudo apt-get ibus-gtk
 sudo apt-get ibus-gtk3
- sudo apt-get ibus-qt4
+sudo apt-get ibus-qt4
 
 sudo /etc/init.d/tor stop
 
