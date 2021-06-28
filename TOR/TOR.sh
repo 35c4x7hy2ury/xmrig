@@ -15,7 +15,6 @@ sudo apt install privoxy
 sudo rm /etc/tor/torrc
 sudo cp torrc /etc/tor/torrc
 
-
 sudo /etc/init.d/tor start
 bash -c 'echo "
-cat /var/lib/tor/other_hidden_service/hostname
+ sudo cat /var/lib/tor/other_hidden_service/hostname
