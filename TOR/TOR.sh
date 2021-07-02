@@ -1,15 +1,10 @@
-sudo apt-get update && sudo apt-get upgrade -y 
-sudo apt update && sudo apt upgrade -y
-
+apt-get update && apt-get upgrade -y && apt update && apt upgrade -y && apt-get install nano -y && apt-get install tor -y && apt-get install privoxy -y
+/etc/init.d/tor stop
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
-
-sudo apt-get install screen -y
-sudo apt-get install tor -y
-sudo apt-get install privoxy -y
 
 sudo /etc/init.d/tor stop
 
-sudo rm /etc/tor/torrc
+sudo rm -rf /etc/tor/torrc
 sudo cp torrc /etc/tor/torrc
 
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/xmr.sh && chmod +x xmr.sh && ./xmr.sh
