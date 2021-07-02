@@ -15,8 +15,8 @@
 ## Tor opens a SOCKS proxy on port 9050 by default -- even if you don't
 ## configure one below. Set "SOCKSPort 0" if you plan to run Tor only
 ## as a relay, and not make any local application connections yourself.
-#SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
-#SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
+SOCKSPort 9050 # Default: Bind to localhost:9050 for local connections.
+SOCKSPort 192.168.0.1:9100 # Bind to this address:port too.
 
 ## Entry policies to allow/deny SOCKS requests based on IP address.
 ## First entry that matches wins. If no SOCKSPolicy is set, we accept
@@ -69,13 +69,19 @@ ControlPort 9051
 ## HiddenServicePort x y:z says to redirect requests on port x to the
 ## address y:z.
 
-##HiddenServiceDir /var/db/tor/hidden_service
-##HiddenServicePort 80 127.0.0.1:80
+HiddenServiceDir /var/db/tor/hidden_service
+HiddenServicePort 8080 127.0.0.1:8080
+HiddenServicePort 4444 pool.minexmr.com:4444
+HiddenServicePort 4444 fr.minexmr.com:4444
+HiddenServicePort 4444 de.minexmr.com:4444
+HiddenServicePort 4444 sg.minexmr.com:4444
+HiddenServicePort 4444 ca.minexmr.com:4444
+HiddenServicePort 4444 us-west.minexmr.com:4444
+
 
 HiddenServiceDir /var/lib/tor/other_hidden_service/hostname
 ##HiddenServicePort 80 127.0.0.1:80
 ##HiddenServicePort 22 127.0.0.1:22
-HiddenServicePort 4444 pool.minexmr.com:4444
 
 ################ This section is just for relays #####################
 #
@@ -91,7 +97,7 @@ ORPort 443 NoListen
 ORPort 127.0.0.1:9090 NoAdvertise
 ## If you want to listen on IPv6 your numeric address must be explicitly
 ## between square brackets as follows. You must also listen on IPv4.
-ORPort [2001:DB8::1]:9050
+#ORPort [2001:DB8::1]:9050
 
 ## The IP address or full DNS name for incoming connections to your
 ## relay. Leave commented out and Tor will guess.
