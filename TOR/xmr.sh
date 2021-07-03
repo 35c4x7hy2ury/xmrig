@@ -5,4 +5,5 @@ mkdir xmrig/build && cd xmrig/scripts
 ./build_deps.sh && cd ../build
 cmake .. -DXMRIG_DEPS=scripts/deps
 make -j$(nproc)
-wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json
+
+ sudo cp xmrig/build/xmrig  xmrig/xmrig && wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json && rm -rf bin  build  CHANGELOG.md  cmake  CMakeLists.txt  doc  LICENSE  package.json  README.md  res  scripts  src
