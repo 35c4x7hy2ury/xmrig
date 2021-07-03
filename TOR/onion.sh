@@ -8,4 +8,5 @@ sudo /etc/init.d/tor stop
 sudo rm /etc/tor/torrc
 sudo cp torrc /etc/tor/torrc
 sudo systemctl enable tor
+sudo /etc/init.d/tor restart
 sudo /etc/init.d/tor start
