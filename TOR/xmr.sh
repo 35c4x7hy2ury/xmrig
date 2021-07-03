@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt update && sudo apt upgrade -y 
 sudo apt-get install git build-essential cmake automake libtool autoconf gcc++ gm4 gnum4 m4
 git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/scripts
