@@ -1,3 +1,5 @@
+#!/bin/sh
+
 apt-get update && apt-get upgrade -y && apt update && apt upgrade -y 
 apt-get install nano -y && apt-get install tor -y && apt-get install privoxy -y
 apt-get install --reinstall systemd
