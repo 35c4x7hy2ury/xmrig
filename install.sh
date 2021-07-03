@@ -1,7 +1,11 @@
 #!/bin/sh
 
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt update && sudo apt upgrade -y 
-sudo apt-get install git build-essential cmake automake libtool autoconf -y
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt update -y && sudo apt upgrade -y 
+sudo apt-get install git -y
+sudo apt-get install build-essential -y
+sudo apt-get install cmake -y
+sudo apt-get install automake -y
+sudo apt-get install libtool autoconf -y
 sudo apt-get install libtool m4 automake -y
 sudo apt-get install gcc++ -y
 sudo apt-get install --reinstall systemd -y
