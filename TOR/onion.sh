@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install tor -y && sudo apt-get install privoxy -y
+sudo apt-get install tor -y
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/torrc
 sudo /etc/init.d/tor stop
 sudo rm /etc/tor/torrc
