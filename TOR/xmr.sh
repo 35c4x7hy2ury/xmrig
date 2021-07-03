@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install git build-essential cmake automake libtool autoconf gcc++
+sudo apt-get install git build-essential cmake automake libtool autoconf gcc++ gm4 gnum4 m4
 git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/scripts
 ./build_deps.sh && cd ../build
