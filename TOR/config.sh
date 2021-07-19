@@ -1,14 +1,7 @@
 #!/bin/sh
 
 
-sed -i '75d' /etc/tor/torrc
-sed -i "75i\HiddenServicePort /var/lib/tor/other_hidden_service/hostname\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 pool.minexmr.com:4444\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 fr.minexmr.com:4444\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 de.minexmr.com:4444\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 sg.minexmr.com:4444\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 ca.minexmr.com:4444\n" /etc/tor/torrc
-sed -i "75i\HiddenServicePort 4444 us-west.minexmr.com:4444\n" /etc/tor/torrc
+sed -i '75d' /etc/tor/torrc && sed -i "75i\HiddenServiceDir /var/lib/tor/other_hidden_service/hostname\n" /etc/tor/torrc && sed -i "76i\HiddenServicePort 4444 pool.minexmr.com:4444\n" /etc/tor/torrc
 
 sudo systemctl enable tor
 sudo /etc/init.d/tor start
