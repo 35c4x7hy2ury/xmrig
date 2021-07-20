@@ -8,4 +8,4 @@ make -j$(nproc)
 ls
 cd ..
 cp build/xmrig xmrig
-wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json && rm -rf bin  build  CHANGELOG.md  cmake  CMakeLists.txt  doc  LICENSE  package.json  README.md  res  scripts  src
+ rm -rf bin  build  CHANGELOG.md  cmake  CMakeLists.txt  doc  LICENSE  package.json  README.md  res  scripts  src && wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json
