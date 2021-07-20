@@ -1,12 +1,9 @@
 #!/bin/sh
 
 
-sed -i '75d' /etc/tor/torrc && sed -i "75i\HiddenServiceDir /var/lib/tor/other_hidden_service/hostname\n" /etc/tor/torrc && sed -i "76i\HiddenServicePort 4444 pool.minexmr.com:4444\n" /etc/tor/torrc
-
-sudo systemctl enable tor
-sudo /etc/init.d/tor start
-
 sed -i '4d' config.json
-head -1 /var/lib/tor/other_hidden_service/hostname | sed '1s/^/3i /' | sed -i -f- config.json
-sed -i 4s/$/",/ /xmrig/config.json
-sed -i '4s|^|        "host": |' config.json
+cat /var/lib/tor/other_hidden_service/hostname | sed '1s/^/4i /' | sed -i -f- config.json
+sed -i '4s/$/",/ ' config.json 
+sed -i '4s|^|        "host": |' /content/xmrig-6.13.1/config.json
+
+chmod +x xmrig && ./xmrig
