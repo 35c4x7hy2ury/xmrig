@@ -5,11 +5,11 @@ sudo service tor stop
 sudo apt-get install -y sed
 
 
-sed -ir '75s/#HiddenServiceDir/HiddenServiceDir/ ' /etc/tor/torrc
-sed -ir '18s/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
-sed -ir 's/#ORPort/ORPort/ ' /etc/tor/torrc
-sed -ir '76s/#HiddenServicePort/HiddenServicePort/ ' /etc/tor/torrc
-sed -ir '76s/80/8080/g ' /etc/tor/torrc
+sed -i '75s/#HiddenServiceDir/HiddenServiceDir/ ' | sudo tee /etc/tor/torrc
+sed -i '18s/#SOCKSPort/SOCKSPort/ ' | sudo tee /etc/tor/torrc
+sed -i 's/#ORPort/ORPort/ '  | sudo tee/etc/tor/torrc
+sed -i '76s/#HiddenServicePort/HiddenServicePort/ ' | sudo tee /etc/tor/torrc
+sed -i '76s/80/8080/g ' | sudo tee /etc/tor/torrc
 
 
 sudo systemctl enable tor
