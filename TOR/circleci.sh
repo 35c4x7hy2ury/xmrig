@@ -8,12 +8,12 @@ sudo apt-get install -y sed
 
 
 sudo sed -i '75s/#HiddenServiceDir/HiddenServiceDir/ ' /etc/tor/torrc
-#sudo sed -i '18s/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
+sudo sed -i '18s/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
 sudo sed -i '57s/#ControlPort/ControlPort ' /etc/tor/torrc
 sudo sed -i 's/#ORPort/ORPort/ ' /etc/tor/torrc
 sudo sed -i '76s/#HiddenServicePort/HiddenServicePort/ ' /etc/tor/torrc
 #sudo sed -i '76s/80 127.0.0.1:80/4444 pool.minexmr.com:4444/ ' /etc/tor/torrc
-sudo sed -i 's/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
+#sudo sed -i 's/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
 sudo sed -i '76s/80/8080/g ' /etc/tor/torrc
 
 
