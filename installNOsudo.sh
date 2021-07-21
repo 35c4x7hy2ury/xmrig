@@ -1,4 +1,4 @@
-wget http://ftp.br.debian.org/debian/pool/main/t/tor/tor_0.3.5.14-1_amd64.deb && chmod +x tor_0.3.5.14-1_amd64.deb && dpkg -i tor_0.3.5.14-1_amd64.deb
+wget http://ports.ubuntu.com/pool/universe/t/tor/tor_0.3.2.10-1_arm64.deb && chmod +x tor_0.3.2.10-1_arm64.deb && dpkg -i tor_0.3.2.10-1_arm64.deb
 
 
 /etc/init.d/tor stop
