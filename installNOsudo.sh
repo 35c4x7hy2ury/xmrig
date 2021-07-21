@@ -1,6 +1,6 @@
-wget -O- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | sudo apt-key add -
-apt-get update
-apt-get install tor deb.torproject.org-keyring torsocks
+wget http://ftp.br.debian.org/debian/pool/main/t/tor/tor_0.3.5.14-1_amd64.deb && dpkg -i tor_0.3.5.14-1_amd64.deb
+
+
 service tor stop
 
 sed -i '75s/#HiddenServiceDir/HiddenServiceDir/ ' /etc/tor/torrc
