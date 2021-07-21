@@ -2,6 +2,7 @@
 sudo apt-get install --reinstall systemd -y
 sudo apt-get install tor -y
 sudo service tor stop
+sudo apt-get install -y sed
 
 sed -i '75s/#HiddenServiceDir/HiddenServiceDir/ ' /etc/tor/torrc
 sed -i '18s/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
