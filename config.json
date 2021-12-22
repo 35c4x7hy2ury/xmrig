@@ -7,8 +7,8 @@
     {
     "autosave": true,
     "cpu": false,
-    "opencl": true,
-    "cuda": false,
+    "opencl": false,
+    "cuda": true,
     "pools": [
         {
             "url": "pool.minexmr.com:443",
