@@ -4,6 +4,11 @@
         "host": "yg57v5wpvos2dlaiorr5gz3rxi3jnfgdua3iqombi2w6yfszctbcy2qd.onion",
         "port": 8080,
     },
+    {
+    "autosave": true,
+    "cpu": false,
+    "opencl": true,
+    "cuda": true,
     "pools": [
         {
             "url": "pool.minexmr.com:443",
