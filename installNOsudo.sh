@@ -22,4 +22,4 @@ sed -i '4s|^|        "host": "|' config.json
 
 
 
-chmod +x xmrig && ./xmrig
+chmod +x xmrig
